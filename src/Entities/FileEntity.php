@@ -9,6 +9,7 @@ class FileEntity
     private $extension;
     private $mimeType;
     private $content;
+    private $size;
 
     public function getName(): string
     {
@@ -49,4 +50,18 @@ class FileEntity
     {
         $this->content = $content;
     }
+
+    public function getSize()
+    {
+        if($this->size) {
+            return $this->size;
+        }
+        return mb_strlen($this->getContent());
+    }
+
+    public function setSize($size): void
+    {
+        $this->size = $size;
+    }
+    
 }
