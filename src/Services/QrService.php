@@ -59,10 +59,21 @@ class QrService
         $writer = new Writer($this->render);
         $extension = $this->format;
         foreach ($encoded as $i => $data) {
-            $fileEntity = $this->forgeFileEntity($extension, $writer->writeString($data));
+            $fileEntity = $this->encodeItem($data);
+//            $fileEntity = $this->forgeFileEntity($extension, $writer->writeString($data));
             $collection->add($fileEntity);
         }
         return $collection;
+    }
+
+    public function encodeItem($data): FileEntity
+    {
+        //$collection = new Collection();
+        $writer = new Writer($this->render);
+        $extension = $this->format;
+            $fileEntity = $this->forgeFileEntity($extension, $writer->writeString($data));
+        //    $collection->add($fileEntity);
+        return $fileEntity;
     }
 
     private function forgeFileEntity(string $extension, string $content): FileEntity
