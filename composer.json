@@ -11,7 +11,7 @@
   "minimum-stability": "dev",
   "require": {
     "bacon/bacon-qr-code": "2.0.3",
-    "zncore/domain": "v0.0.*"
+    "zncore/domain": "0.x-dev"
   },
   "autoload": {
     "psr-4": {
