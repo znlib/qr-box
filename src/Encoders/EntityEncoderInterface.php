@@ -2,7 +2,7 @@
 
 namespace ZnLib\QrBox\Encoders;
 
-use ZnCore\Base\Interfaces\EncoderInterface;
+use ZnCore\Contract\Encoder\Interfaces\EncoderInterface;
 
 interface EntityEncoderInterface extends EncoderInterface
 {
