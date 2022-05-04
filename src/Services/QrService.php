@@ -11,6 +11,7 @@ use BaconQrCode\Renderer\RendererStyle\RendererStyle;
 use BaconQrCode\Writer;
 use Illuminate\Support\Collection;
 use ZnCore\Base\Helpers\EnumHelper;
+use ZnCore\Base\Helpers\MimeTypeHelper;
 use ZnCore\Base\Legacy\Yii\Helpers\FileHelper;
 use ZnLib\QrBox\Entities\FileEntity;
 use ZnLib\QrBox\Enums\ImageExtensionEnum;
@@ -80,7 +81,7 @@ class QrService
     {
         $fileEntity = new FileEntity();
         $fileEntity->setExtension($extension);
-        $mimeType = FileHelper::mimeTypeByExtension($extension);
+        $mimeType = MimeTypeHelper::getMimeTypeByExt($extension);
         $fileEntity->setMimeType($mimeType);
         $fileEntity->setContent($content);
         return $fileEntity;
