@@ -4,7 +4,7 @@ namespace ZnLib\QrBox\Services;
 
 use Illuminate\Support\Collection;
 use ZnCore\Base\Encoders\AggregateEncoder;
-use ZnCore\Domain\Helpers\EntityHelper;
+use ZnCore\Base\Libs\Entity\Helpers\EntityHelper;
 use ZnLib\QrBox\Entities\BarCodeEntity;
 use ZnLib\QrBox\Libs\DataSize;
 use ZnLib\QrBox\Libs\WrapperDetector;
