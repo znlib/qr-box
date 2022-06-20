@@ -4,6 +4,7 @@ namespace ZnLib\QrBox\Services;
 
 use Illuminate\Support\Collection;
 use ZnCore\Base\Encoders\AggregateEncoder;
+use ZnCore\Base\Libs\Entity\Helpers\CollectionHelper;
 use ZnCore\Base\Libs\Entity\Helpers\EntityHelper;
 use ZnLib\QrBox\Entities\BarCodeEntity;
 use ZnLib\QrBox\Libs\DataSize;
@@ -84,7 +85,7 @@ class EncoderService
             $barCodeEntity = $wrapper->decode($item);
             $collection->add($barCodeEntity);
         }
-        $arr = EntityHelper::indexingCollection($collection, 'id');
+        $arr = CollectionHelper::indexing($collection, 'id');
         ksort($arr);
         return new Collection($arr);
     }
