@@ -12,7 +12,6 @@ use BaconQrCode\Writer;
 use Illuminate\Support\Collection;
 use ZnCore\Base\Libs\Enum\Helpers\EnumHelper;
 use ZnCore\Base\Libs\FileSystem\Helpers\MimeTypeHelper;
-use ZnCore\Base\Legacy\Yii\Helpers\FileHelper;
 use ZnLib\QrBox\Entities\FileEntity;
 use ZnLib\QrBox\Enums\ImageExtensionEnum;
 
@@ -72,7 +71,7 @@ class QrService
         //$collection = new Collection();
         $writer = new Writer($this->render);
         $extension = $this->format;
-            $fileEntity = $this->forgeFileEntity($extension, $writer->writeString($data));
+        $fileEntity = $this->forgeFileEntity($extension, $writer->writeString($data));
         //    $collection->add($fileEntity);
         return $fileEntity;
     }

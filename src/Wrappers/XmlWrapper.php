@@ -3,7 +3,7 @@
 namespace ZnLib\QrBox\Wrappers;
 
 
-use ZnCore\Base\Encoders\XmlEncoder;
+use ZnCore\Base\Libs\Format\Encoders\XmlEncoder;
 use ZnLib\QrBox\Entities\BarCodeEntity;
 use DateTime;
 
