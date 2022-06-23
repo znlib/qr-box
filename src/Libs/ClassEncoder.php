@@ -3,7 +3,7 @@
 namespace ZnLib\QrBox\Libs;
 
 use Illuminate\Support\Collection;
-use ZnCore\Base\Encoders\AggregateEncoder;
+use ZnCore\Base\Encoders\ChainEncoder;
 use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 
 class ClassEncoder
@@ -21,13 +21,13 @@ class ClassEncoder
         return ArrayHelper::getValue($this->assoc, $name);
     }
 
-    public function encodersToClasses(array $names): AggregateEncoder
+    public function encodersToClasses(array $names): ChainEncoder
     {
         $classes = [];
         foreach ($names as $name) {
             $classes[] = $this->encoderToClass($name);
         }
-        $encoders = new AggregateEncoder(new Collection($classes));
+        $encoders = new ChainEncoder(new Collection($classes));
         return $encoders;
     }
 }

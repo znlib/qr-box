@@ -3,7 +3,7 @@
 namespace ZnLib\QrBox\Services;
 
 use Illuminate\Support\Collection;
-use ZnCore\Base\Encoders\AggregateEncoder;
+use ZnCore\Base\Encoders\ChainEncoder;
 use ZnCore\Domain\Entity\Helpers\CollectionHelper;
 use ZnCore\Domain\Entity\Helpers\EntityHelper;
 use ZnLib\QrBox\Entities\BarCodeEntity;
@@ -25,8 +25,8 @@ class EncoderService
 
     public function __construct(
         WrapperDetector $wrapperDetector,
-        AggregateEncoder $resultEncoder,
-        AggregateEncoder $wrapperEncoder,
+        ChainEncoder $resultEncoder,
+        ChainEncoder $wrapperEncoder,
         WrapperInterface $defaultEntityWrapper,
         DataSize $dataSize
     )

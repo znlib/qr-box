@@ -2,7 +2,7 @@
 
 namespace ZnLib\QrBox\Libs;
 
-use ZnCore\Base\Encoders\AggregateEncoder;
+use ZnCore\Base\Encoders\ChainEncoder;
 use ZnLib\QrBox\Entities\BarCodeEntity;
 use ZnLib\QrBox\Wrappers\WrapperInterface;
 use DateTime;
@@ -14,14 +14,14 @@ class DataSize
     private $encoder;
     private $wrapper;
 
-    public function __construct(AggregateEncoder $encoder, WrapperInterface $wrapper, int $maxQrSize = 1183)
+    public function __construct(ChainEncoder $encoder, WrapperInterface $wrapper, int $maxQrSize = 1183)
     {
         $this->encoder = $encoder;
         $this->wrapper = $wrapper;
         $this->maxQrSize = $maxQrSize;
     }
 
-    public function getSize(AggregateEncoder $encoder, WrapperInterface $wrapper): int
+    public function getSize(ChainEncoder $encoder, WrapperInterface $wrapper): int
     {
         $rate = $this->getDataSizeRateByEncoders();
         $dataSize = $this->getDataSizeByWrapper() / $rate;
