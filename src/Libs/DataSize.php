@@ -2,7 +2,7 @@
 
 namespace ZnLib\QrBox\Libs;
 
-use ZnCore\Base\Libs\Format\Encoders\ChainEncoder;
+use ZnCore\Base\Format\Encoders\ChainEncoder;
 use ZnLib\QrBox\Entities\BarCodeEntity;
 use ZnLib\QrBox\Wrappers\WrapperInterface;
 use DateTime;

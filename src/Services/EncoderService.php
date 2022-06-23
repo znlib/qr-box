@@ -3,7 +3,7 @@
 namespace ZnLib\QrBox\Services;
 
 use Illuminate\Support\Collection;
-use ZnCore\Base\Libs\Format\Encoders\ChainEncoder;
+use ZnCore\Base\Format\Encoders\ChainEncoder;
 use ZnCore\Domain\Entity\Helpers\CollectionHelper;
 use ZnCore\Domain\Entity\Helpers\EntityHelper;
 use ZnLib\QrBox\Entities\BarCodeEntity;

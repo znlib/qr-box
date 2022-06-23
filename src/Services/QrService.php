@@ -10,8 +10,8 @@ use BaconQrCode\Renderer\PlainTextRenderer;
 use BaconQrCode\Renderer\RendererStyle\RendererStyle;
 use BaconQrCode\Writer;
 use Illuminate\Support\Collection;
-use ZnCore\Base\Libs\Enum\Helpers\EnumHelper;
-use ZnCore\Base\Libs\FileSystem\Helpers\MimeTypeHelper;
+use ZnCore\Base\Enum\Helpers\EnumHelper;
+use ZnCore\Base\FileSystem\Helpers\MimeTypeHelper;
 use ZnLib\QrBox\Entities\FileEntity;
 use ZnLib\QrBox\Enums\ImageExtensionEnum;
 

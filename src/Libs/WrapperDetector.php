@@ -2,7 +2,7 @@
 
 namespace ZnLib\QrBox\Libs;
 
-use ZnCore\Base\Libs\Instance\Helpers\InstanceHelper;
+use ZnCore\Base\Instance\Helpers\InstanceHelper;
 use ZnLib\QrBox\Wrappers\WrapperInterface;
 
 class WrapperDetector

@@ -2,7 +2,7 @@
 
 namespace ZnLib\QrBox\Encoders;
 
-class Base64Encoder extends \ZnCore\Base\Libs\Format\Encoders\Base64Encoder implements EntityEncoderInterface
+class Base64Encoder extends \ZnCore\Base\Format\Encoders\Base64Encoder implements EntityEncoderInterface
 {
 
     public function compressionRate(): float
