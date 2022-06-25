@@ -2,7 +2,7 @@
 
 namespace ZnLib\QrBox\Tests\Unit;
 
-use ZnCore\Base\Format\Encoders\ZipEncoder;
+use ZnLib\Components\Format\Encoders\ZipEncoder;
 use ZnLib\QrBox\Factories\ClassEncoderFactory;
 use ZnLib\QrBox\Factories\EncoderServiceFactory;
 use ZnLib\QrBox\Services\EncoderService;

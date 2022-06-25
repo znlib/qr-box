@@ -2,8 +2,8 @@
 
 namespace ZnLib\QrBox\Factories;
 
-use ZnCore\Base\Format\Encoders\GZipEncoder;
-use ZnCore\Base\Format\Encoders\ZipEncoder;
+use ZnLib\Components\Format\Encoders\GZipEncoder;
+use ZnLib\Components\Format\Encoders\ZipEncoder;
 use ZnLib\QrBox\Encoders\Base64Encoder;
 use ZnLib\QrBox\Encoders\HexEncoder;
 use ZnLib\QrBox\Libs\ClassEncoder;

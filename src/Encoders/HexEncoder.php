@@ -2,7 +2,7 @@
 
 namespace ZnLib\QrBox\Encoders;
 
-class HexEncoder extends \ZnCore\Base\Format\Encoders\HexEncoder implements EntityEncoderInterface
+class HexEncoder extends \ZnLib\Components\Format\Encoders\HexEncoder implements EntityEncoderInterface
 {
 
     public function compressionRate(): float

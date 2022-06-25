@@ -3,7 +3,7 @@
 namespace ZnLib\QrBox\Libs;
 
 use Illuminate\Support\Collection;
-use ZnCore\Base\Format\Encoders\ChainEncoder;
+use ZnLib\Components\Format\Encoders\ChainEncoder;
 use ZnCore\Base\Arr\Helpers\ArrayHelper;
 
 class ClassEncoder
