@@ -2,7 +2,7 @@
 
 namespace ZnLib\QrBox\Libs;
 
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use ZnLib\Components\Format\Encoders\ChainEncoder;
 use ZnCore\Base\Arr\Helpers\ArrayHelper;
 
