@@ -51,7 +51,7 @@ class QrService
 
     /**
      * @param Collection $encoded
-     * @return Collection | FileEntity[]
+     * @return \ZnCore\Domain\Collection\Interfaces\Enumerable | FileEntity[]
      */
     public function encode(Collection $encoded): Collection
     {

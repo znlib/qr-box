@@ -74,7 +74,7 @@ class EncoderService
 
     /**
      * @param Collection $array
-     * @return Collection | BarCodeEntity[]
+     * @return \ZnCore\Domain\Collection\Interfaces\Enumerable | BarCodeEntity[]
      * @throws Exception
      */
     private function arrayToCollection(Collection $array): Collection
