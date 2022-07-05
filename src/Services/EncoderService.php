@@ -2,17 +2,16 @@
 
 namespace ZnLib\QrBox\Services;
 
+use DateTime;
+use Exception;
 use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Collection\Libs\Collection;
-use ZnLib\Components\Format\Encoders\ChainEncoder;
 use ZnCore\Domain\Entity\Helpers\CollectionHelper;
-use ZnCore\Domain\Entity\Helpers\EntityHelper;
+use ZnLib\Components\Format\Encoders\ChainEncoder;
 use ZnLib\QrBox\Entities\BarCodeEntity;
 use ZnLib\QrBox\Libs\DataSize;
 use ZnLib\QrBox\Libs\WrapperDetector;
 use ZnLib\QrBox\Wrappers\WrapperInterface;
-use DateTime;
-use Exception;
 
 class EncoderService
 {
@@ -74,7 +73,7 @@ class EncoderService
     }
 
     /**
-     * @param Collection $array
+     * @param Enumerable $array
      * @return Enumerable | BarCodeEntity[]
      * @throws Exception
      */

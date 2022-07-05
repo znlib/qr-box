@@ -2,9 +2,9 @@
 
 namespace ZnLib\QrBox\Libs;
 
+use ZnCore\Base\Arr\Helpers\ArrayHelper;
 use ZnCore\Domain\Collection\Libs\Collection;
 use ZnLib\Components\Format\Encoders\ChainEncoder;
-use ZnCore\Base\Arr\Helpers\ArrayHelper;
 
 class ClassEncoder
 {

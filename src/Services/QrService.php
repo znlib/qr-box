@@ -9,10 +9,10 @@ use BaconQrCode\Renderer\ImageRenderer;
 use BaconQrCode\Renderer\PlainTextRenderer;
 use BaconQrCode\Renderer\RendererStyle\RendererStyle;
 use BaconQrCode\Writer;
-use ZnCore\Domain\Collection\Interfaces\Enumerable;
-use ZnCore\Domain\Collection\Libs\Collection;
 use ZnCore\Base\Enum\Helpers\EnumHelper;
 use ZnCore\Base\FileSystem\Helpers\MimeTypeHelper;
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
+use ZnCore\Domain\Collection\Libs\Collection;
 use ZnLib\QrBox\Entities\FileEntity;
 use ZnLib\QrBox\Enums\ImageExtensionEnum;
 
@@ -51,7 +51,7 @@ class QrService
     }
 
     /**
-     * @param Collection $encoded
+     * @param Enumerable $encoded
      * @return Enumerable | FileEntity[]
      */
     public function encode(Enumerable $encoded): Enumerable
