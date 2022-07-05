@@ -2,6 +2,7 @@
 
 namespace ZnLib\QrBox\Services;
 
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Collection\Libs\Collection;
 use ZnLib\Components\Format\Encoders\ChainEncoder;
 use ZnCore\Domain\Entity\Helpers\CollectionHelper;
@@ -38,7 +39,7 @@ class EncoderService
         $this->dataSize = $dataSize;
     }
 
-    public function encode(string $data): Collection
+    public function encode(string $data): Enumerable
     {
         if (empty($data)) {
             throw new \InvalidArgumentException('Empty data for encode!');
@@ -74,10 +75,10 @@ class EncoderService
 
     /**
      * @param Collection $array
-     * @return \ZnCore\Domain\Collection\Interfaces\Enumerable | BarCodeEntity[]
+     * @return Enumerable | BarCodeEntity[]
      * @throws Exception
      */
-    private function arrayToCollection(Collection $array): Collection
+    private function arrayToCollection(Enumerable $array): Enumerable
     {
         $collection = new Collection();
         foreach ($array as $item) {
