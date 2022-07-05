@@ -61,7 +61,7 @@ class EncoderService
         return $collection;
     }
 
-    public function decode(Collection $encodedData)
+    public function decode(Enumerable $encodedData)
     {
         $barCodeCollection = $this->arrayToCollection($encodedData);
         $resultCollection = new Collection();
