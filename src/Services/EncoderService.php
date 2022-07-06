@@ -4,9 +4,9 @@ namespace ZnLib\QrBox\Services;
 
 use DateTime;
 use Exception;
-use ZnCore\Domain\Collection\Interfaces\Enumerable;
-use ZnCore\Domain\Collection\Libs\Collection;
-use ZnCore\Domain\Entity\Helpers\CollectionHelper;
+use ZnCore\Collection\Interfaces\Enumerable;
+use ZnCore\Collection\Libs\Collection;
+use ZnCore\Entity\Helpers\CollectionHelper;
 use ZnLib\Components\Format\Encoders\ChainEncoder;
 use ZnLib\QrBox\Entities\BarCodeEntity;
 use ZnLib\QrBox\Libs\DataSize;
