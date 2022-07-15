@@ -6,7 +6,7 @@ use DateTime;
 use Exception;
 use ZnCore\Collection\Interfaces\Enumerable;
 use ZnCore\Collection\Libs\Collection;
-use ZnDomain\Entity\Helpers\CollectionHelper;
+use ZnCore\Collection\Helpers\CollectionHelper;
 use ZnLib\Components\Format\Encoders\ChainEncoder;
 use ZnLib\QrBox\Entities\BarCodeEntity;
 use ZnLib\QrBox\Libs\DataSize;
